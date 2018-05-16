@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    /* 轮播图容器宽度 */
+    width: 980px;
+    /* 轮播图容器宽度 */
+    height: 215px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slide {
+    margin: 0;
+    padding: 0;
+    /* 所有图片宽度综合 */
+    width: 2950px;
+    position: absolute;
+    left: 0;
+    height: inherit;
+    /* 过渡时间 */
+    transition: left 1.2s;
+}
+
+#side img:nth-child(1) {
+    z-index: 999;
+    position: absolute;
+    height: inherit;
+    left: 2px;
+    top: 75px;
+}
+
+#side img:nth-child(2) {
+    z-index: 999;
+    position: absolute;
+    height: inherit;
+    right: 2px;
+    top: 75px;
+}
+
+#side img:hover {
+    /* 选定滑动图标时加蒙板 */
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#buttons {
+    z-index: 999;
+    position: absolute;
+    left: 464px;
+    top: 185px;
+}
